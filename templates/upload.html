@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+{% block title %}Upload — RecruitIQ{% endblock %}
+
+{% block content %}
+<div class="page-header">
+  <h1 class="page-title">Upload Resumes</h1>
+  <p class="page-sub">Upload a CSV batch or an individual resume (PDF / TXT)</p>
+</div>
+
+<div class="upload-container">
+
+  <!-- ── Mode Toggle ────────────────────────────────────────────── -->
+  <div class="mode-tabs">
+    <button class="mode-tab active" data-mode="csv">📋 CSV Batch</button>
+    <button class="mode-tab" data-mode="single">📄 Single Resume</button>
+    <button class="mode-tab" data-mode="demo">⚡ Quick Demo</button>
+  </div>
+
+  <!-- ── CSV Upload Panel ───────────────────────────────────────── -->
+  <div class="upload-panel" id="panel-csv">
+    <div class="dropzone" id="csvDropzone">
+      <div class="dz-icon">📂</div>
+      <p class="dz-text">Drag & drop a CSV file here</p>
+      <p class="dz-hint">or click to browse</p>
+      <input type="file" id="csvInput" accept=".csv" hidden />
+    </div>
+    <div class="csv-requirements">
+      <h4>Required CSV columns:</h4>
+      <div class="col-tags">
+        <span class="col-tag required">name</span>
+        <span class="col-tag required">skills</span>
+        <span class="col-tag required">education</span>
+        <span class="col-tag required">experience_years</span>
+        <span class="col-tag optional">gender</span>
+        <span class="col-tag optional">num_skills</span>
+      </div>
+      <p class="hint-text">Optional columns are used for bias analysis. Download a <a href="#" id="sampleDownloadLink">sample template</a>.</p>
+    </div>
+    <button class="btn btn-primary btn-full" id="csvUploadBtn" disabled>
+      Upload & Screen →
+    </button>
+  </div>
+
+  <!-- ── Single Resume Panel ────────────────────────────────────── -->
+  <div class="upload-panel hidden" id="panel-single">
+    <div class="dropzone" id="singleDropzone">
+      <div class="dz-icon">📄</div>
+      <p class="dz-text">Drag & drop a PDF or TXT resume</p>
+      <p class="dz-hint">or click to browse</p>
+      <input type="file" id="singleInput" accept=".pdf,.txt" hidden />
+    </div>
+    <div id="resumePreview" class="resume-preview hidden">
+      <h4>Parsed Resume Data</h4>
+      <div id="parsedFields" class="parsed-grid"></div>
+    </div>
+    <button class="btn btn-primary btn-full" id="singleUploadBtn" disabled>
+      Screen This Resume →
+    </button>
+  </div>
+
+  <!-- ── Demo Panel ─────────────────────────────────────────────── -->
+  <div class="upload-panel hidden" id="panel-demo">
+    <div class="demo-panel-inner">
+      <div class="demo-icon">🤖</div>
+      <h3>Generate Synthetic Data</h3>
+      <p>Creates 30 synthetic resumes with varied genders, education levels, skills, and experience — perfect for exploring bias.</p>
+      <div class="demo-specs">
+        <div class="spec-item"><span>👥</span> 30 candidates</div>
+        <div class="spec-item"><span>♂️♀️</span> Mixed genders</div>
+        <div class="spec-item"><span>🎓</span> All education tiers</div>
+        <div class="spec-item"><span>💼</span> 0–15 years exp</div>
+      </div>
+      <button class="btn btn-primary btn-lg" id="demoBtn">
+        ⚡ Generate & Screen
+      </button>
+    </div>
+  </div>
+
+</div>
+
+<!-- ── Single-resume result modal ─────────────────────────────────── -->
+<div class="modal-overlay hidden" id="singleResultModal">
+  <div class="modal-box">
+    <button class="modal-close" id="modalClose">✕</button>
+    <h2 class="modal-title">Screening Result</h2>
+    <div id="singleResultContent"></div>
+    <div class="modal-actions">
+      <a href="/results" class="btn btn-ghost">Full Dashboard →</a>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/upload.js') }}"></script>
+{% endblock %}

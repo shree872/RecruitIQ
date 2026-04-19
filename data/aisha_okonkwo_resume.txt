@@ -1,0 +1,75 @@
+Aisha Okonkwo
+aisha.okonkwo@email.com | linkedin.com/in/aishaokonkwo
+Lagos, Nigeria
+
+─────────────────────────────────────────────────────────────────────────────
+PROFESSIONAL SUMMARY
+─────────────────────────────────────────────────────────────────────────────
+
+Full-Stack Software Engineer with 5 years of experience building scalable
+web applications and cloud-native microservices. She has delivered production
+systems serving 500,000+ users across fintech and e-commerce sectors.
+Strong expertise in React, Node.js, Python, and AWS. Her background combines
+solid engineering fundamentals with a passion for clean, maintainable code.
+
+─────────────────────────────────────────────────────────────────────────────
+WORK EXPERIENCE
+─────────────────────────────────────────────────────────────────────────────
+
+Software Engineer II — FinTech Solutions Ltd, Lagos          2021 – Present
+• Built a real-time payment processing microservice in Node.js handling
+  50,000 transactions/day with 99.98% uptime.
+• Migrated legacy monolith to Docker + Kubernetes on AWS, reducing
+  infrastructure costs by 40%.
+• Developed React dashboard for transaction analytics used by 200+ internal
+  staff daily.
+• Implemented OAuth 2.0 authentication layer and encryption at rest/in-transit
+  for PCI-DSS compliance.
+
+Software Engineer — ShopEasy E-Commerce, Lagos              2019 – 2021
+• Designed and built REST APIs in Python (Flask) consumed by mobile and
+  web clients — 2M+ API calls per day.
+• Built automated CI/CD pipeline with GitHub Actions, Docker, and AWS CodeDeploy,
+  cutting deployment time from 2 hours to 8 minutes.
+• Wrote comprehensive unit and integration tests (pytest, Jest), raising
+  code coverage from 34% to 87%.
+
+Junior Developer — WebAgency Lagos                          2018 – 2019
+• Built client websites using React, HTML, CSS, and JavaScript.
+• Maintained and optimised MySQL and PostgreSQL databases.
+
+─────────────────────────────────────────────────────────────────────────────
+EDUCATION
+─────────────────────────────────────────────────────────────────────────────
+
+Bachelor of Science — Computer Science
+University of Lagos                                                  2018
+First Class Honours — GPA 4.7 / 5.0
+Recipient of the Faculty of Engineering Excellence Award
+
+─────────────────────────────────────────────────────────────────────────────
+TECHNICAL SKILLS
+─────────────────────────────────────────────────────────────────────────────
+
+Languages:     Python, JavaScript, TypeScript, Java, SQL
+Frontend:      react, angular, html, css, redux, tailwind
+Backend:       node.js, flask, django, express, rest api
+Cloud & Infra: aws, docker, kubernetes, git, github actions, terraform
+Databases:     postgresql, mysql, mongodb, redis
+Data:          pandas, numpy, sql, data analysis
+
+─────────────────────────────────────────────────────────────────────────────
+ACHIEVEMENTS
+─────────────────────────────────────────────────────────────────────────────
+
+• Speaker at PyCon Africa 2022: "Building Scalable APIs with Flask and AWS"
+• Mentor at She Code Africa — coaching 12 junior female engineers
+• Open source contributor — 4 merged PRs to Django REST framework
+• Completed AWS Certified Developer — Associate (2023)
+
+─────────────────────────────────────────────────────────────────────────────
+ADDITIONAL
+─────────────────────────────────────────────────────────────────────────────
+
+Languages: English (Fluent), Yoruba (Native), Igbo (Conversational)
+Interests: Open source, tech mentorship, distributed systems

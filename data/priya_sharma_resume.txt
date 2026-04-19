@@ -1,0 +1,86 @@
+Priya Sharma
+priya.sharma@email.com | linkedin.com/in/priyasharma | github.com/priyasharma
+Mumbai, India (Open to relocation)
+
+─────────────────────────────────────────────────────────────────────────────
+PROFESSIONAL SUMMARY
+─────────────────────────────────────────────────────────────────────────────
+
+Senior Data Scientist with 7 years of experience building production-grade
+machine learning systems at scale. She has led cross-functional teams of
+engineers and analysts at top-tier technology companies. Proven track record
+of delivering NLP, computer vision, and recommendation-system projects that
+directly drove business outcomes worth $10M+. Her work spans the full ML
+lifecycle — from data wrangling and model design to deployment and monitoring.
+
+─────────────────────────────────────────────────────────────────────────────
+WORK EXPERIENCE
+─────────────────────────────────────────────────────────────────────────────
+
+Senior Data Scientist — TechCorp Global, Bangalore          2020 – Present
+• Led a team of 5 data scientists building a real-time fraud detection system
+  using deep learning (PyTorch), reducing false positives by 34%.
+• Designed and deployed an NLP-based document classification pipeline on AWS
+  SageMaker, processing 2M+ documents per day.
+• Built a recommendation engine using collaborative filtering + transformer
+  embeddings that increased user engagement by 22%.
+• Mentored 3 junior data scientists; introduced MLOps best practices using
+  MLflow, Docker, and Kubernetes.
+
+Data Scientist — Analytics Hub, Pune                        2018 – 2020
+• Developed customer churn prediction models (XGBoost, Random Forest) with
+  89% AUC, saving $1.2M annually in retention costs.
+• Automated ETL pipelines using Apache Spark and Python, cutting data
+  processing time by 60%.
+• Collaborated with product teams to translate business requirements into
+  analytical frameworks and dashboards in Tableau.
+
+Junior Data Analyst — StartupX, Mumbai                      2017 – 2018
+• Built dashboards and reports in Tableau and Power BI for C-suite stakeholders.
+• Performed A/B test analysis and statistical modelling using Python and R.
+
+─────────────────────────────────────────────────────────────────────────────
+EDUCATION
+─────────────────────────────────────────────────────────────────────────────
+
+Master of Science — Computer Science (Specialisation: Machine Learning)
+Indian Institute of Technology (IIT) Bombay                         2017
+CGPA: 9.1 / 10
+
+Bachelor of Engineering — Computer Science
+University of Pune                                                   2015
+First Class with Distinction
+
+─────────────────────────────────────────────────────────────────────────────
+TECHNICAL SKILLS
+─────────────────────────────────────────────────────────────────────────────
+
+Languages:     Python, R, SQL, Java, Scala
+ML / AI:       machine learning, deep learning, nlp, tensorflow, pytorch,
+               scikit-learn, keras, transformers, XGBoost
+Data:          pandas, numpy, spark, hadoop, kafka
+Cloud & Infra: aws, azure, docker, kubernetes, mlflow, airflow, git
+Visualisation: tableau, power bi, matplotlib, seaborn
+
+─────────────────────────────────────────────────────────────────────────────
+PROJECTS & PUBLICATIONS
+─────────────────────────────────────────────────────────────────────────────
+
+• "Attention-based NLP for Legal Document Review" — published in EMNLP 2022
+• Open-source: ResumeParser (2.1k GitHub stars) — Python library for
+  extracting structured data from PDF resumes using spaCy + regex
+• Kaggle Expert — top 3% globally; winner of 2 featured NLP competitions
+
+─────────────────────────────────────────────────────────────────────────────
+CERTIFICATIONS
+─────────────────────────────────────────────────────────────────────────────
+
+• AWS Certified Machine Learning — Specialty (2023)
+• Google Professional Data Engineer (2022)
+• Deep Learning Specialisation — Coursera / deeplearning.ai (2020)
+
+─────────────────────────────────────────────────────────────────────────────
+LANGUAGES
+─────────────────────────────────────────────────────────────────────────────
+
+English (Fluent), Hindi (Native), Marathi (Native)

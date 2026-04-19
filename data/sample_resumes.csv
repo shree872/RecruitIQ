@@ -1,0 +1,31 @@
+name,gender,education,experience_years,skills,num_skills
+Linda Jones,Other,High School,7,"nlp, sql, typescript, deep learning, power bi, spark",6
+Mark Jackson,Male,High School,2,"data analysis, nlp",2
+Mary Johnson,Other,PhD,13,"nlp, pytorch, kubernetes, flask, azure",5
+Richard Garcia,Male,Master's,8,"sql, data analysis, react, deep learning, machine learning, docker, javascript",7
+Betty Martin,Female,PhD,1,"typescript, pytorch, spark, deep learning, docker, machine learning",6
+Lisa White,Other,PhD,6,"javascript, machine learning, java, power bi, nlp, django, c++",7
+William Brown,Male,Master's,14,"excel, aws, r, c++, javascript, data analysis",6
+Karen Thomas,Other,High School,5,"spark, typescript, nlp, r, pytorch, docker, flask, azure, c++, react, java",11
+Robert Johnson,Male,Bachelor's,8,"machine learning, data analysis, kubernetes, javascript, react, c++, pandas, docker",8
+Dorothy Walker,Other,Associate,4,"nlp, typescript, spark, c++, flask, kubernetes",6
+Margaret Thompson,Female,Bachelor's,4,"tableau, pandas, machine learning, c++, java",5
+David Jones,Male,Associate,13,"git, machine learning, docker, typescript, azure, pytorch, tableau, flask, spark, python, deep learning, react",12
+Karen Thomas,Other,Bachelor's,9,"tensorflow, r, pytorch",3
+Charles Taylor,Male,PhD,3,"excel, django, tableau, git",4
+David Jones,Male,Bachelor's,0,"git, react, pandas, python",4
+Matthew Wilson,Male,Bachelor's,1,"nlp, kubernetes, machine learning, typescript, pandas",5
+David Jones,Male,Associate,15,"spark, r, flask, tableau, git, tensorflow, data analysis, azure, power bi, django, docker, react",12
+Betty Martin,Other,Master's,14,"deep learning, nlp, c++, machine learning, react, python, kubernetes, spark, typescript, git",10
+Michael Williams,Male,High School,2,"java, react, machine learning, tableau, nlp",5
+Ashley Robinson,Female,Associate,4,"typescript, kubernetes, c++, pandas, nlp, javascript, tensorflow, data analysis, deep learning, spark",10
+Sandra Lewis,Other,Bachelor's,13,"pytorch, typescript, java, power bi, excel, javascript, deep learning, c++",8
+Nancy Harris,Female,High School,6,"data analysis, spark, pytorch, sql, tensorflow",5
+Charles Taylor,Male,Master's,2,"pytorch, azure, spark, deep learning, java",5
+Mary Johnson,Other,High School,5,"tensorflow, pandas, data analysis, docker, java",5
+Anthony Harris,Male,High School,8,"azure, pytorch, django, tensorflow, spark, pandas, sql, data analysis",8
+Jessica Anderson,Female,High School,1,"typescript, react, java, azure, kubernetes, pandas, tableau, git, r, javascript, machine learning",11
+Michael Williams,Male,PhD,7,"docker, deep learning, kubernetes",3
+Robert Johnson,Male,PhD,13,"power bi, kubernetes, tableau",3
+Karen Thomas,Female,Associate,10,"nlp, flask, docker, sql, power bi, excel, django, pytorch, react, machine learning, python, azure",12
+Linda Jones,Other,High School,6,"tableau, flask, sql, aws, machine learning, nlp, javascript, django, r, pytorch",10

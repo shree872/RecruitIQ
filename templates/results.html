@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+{% block title %}Results — RecruitIQ{% endblock %}
+
+{% block content %}
+<div class="page-header">
+  <h1 class="page-title">Screening Results</h1>
+  <p class="page-sub">Compare biased vs. unbiased hiring decisions side by side</p>
+</div>
+
+<!-- ── No data state ──────────────────────────────────────────────── -->
+<div id="noDataState" class="empty-state">
+  <div class="empty-icon">📭</div>
+  <h3>No screening data yet</h3>
+  <p>Upload a CSV or run the demo to see results here.</p>
+  <a href="/upload" class="btn btn-primary">Go to Upload →</a>
+</div>
+
+<!-- ── Results dashboard (hidden until data loads) ───────────────── -->
+<div id="resultsDashboard" class="hidden">
+
+  <!-- Summary Cards -->
+  <div class="summary-row" id="summaryCards"></div>
+
+  <!-- Mode Toggle -->
+  <div class="results-mode-row">
+    <span class="mode-label">Viewing mode:</span>
+    <div class="toggle-group">
+      <button class="toggle-btn active" id="btnBiased">⚠️ Biased</button>
+      <button class="toggle-btn"        id="btnUnbiased">✅ Unbiased</button>
+      <button class="toggle-btn"        id="btnBoth">⚖️ Compare</button>
+    </div>
+    <button class="btn btn-sm" id="downloadBtn">⬇ Download CSV</button>
+  </div>
+
+  <!-- Charts Row -->
+  <div class="charts-grid">
+    <div class="chart-card">
+      <h3 class="chart-title">Selection Distribution</h3>
+      <canvas id="chartSelection" height="220"></canvas>
+    </div>
+    <div class="chart-card">
+      <h3 class="chart-title">By Gender</h3>
+      <canvas id="chartGender" height="220"></canvas>
+    </div>
+    <div class="chart-card">
+      <h3 class="chart-title">By Education Level</h3>
+      <canvas id="chartEdu" height="220"></canvas>
+    </div>
+    <div class="chart-card">
+      <h3 class="chart-title">Score Distribution</h3>
+      <canvas id="chartScores" height="220"></canvas>
+    </div>
+  </div>
+
+  <!-- Results Table -->
+  <div class="table-card">
+    <div class="table-header">
+      <h3>Candidate Table</h3>
+      <div class="table-controls">
+        <input type="text" id="searchInput" placeholder="Search name or skills…" class="search-input" />
+        <select id="filterDecision" class="filter-select">
+          <option value="">All decisions</option>
+          <option value="Selected">Selected</option>
+          <option value="Rejected">Rejected</option>
+        </select>
+      </div>
+    </div>
+    <div class="table-wrap">
+      <table class="results-table" id="resultsTable">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Education</th>
+            <th>Exp (yrs)</th>
+            <th>Skills Count</th>
+            <th>Score</th>
+            <th>Decision</th>
+          </tr>
+        </thead>
+        <tbody id="resultsBody"></tbody>
+      </table>
+    </div>
+  </div>
+
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/results.js') }}"></script>
+{% endblock %}

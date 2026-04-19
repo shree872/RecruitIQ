@@ -1,0 +1,119 @@
+{% extends "base.html" %}
+{% block title %}RecruitIQ — AI Resume Screener{% endblock %}
+
+{% block content %}
+<!-- ── Hero ──────────────────────────────────────────────────────── -->
+<section class="hero">
+  <div class="hero-glow"></div>
+  <div class="hero-content">
+    <span class="hero-badge">Fair · Fast · Intelligent</span>
+    <h1 class="hero-title">
+      Hire smarter.<br/>
+      <span class="hero-accent">Hire fairer.</span>
+    </h1>
+    <p class="hero-sub">
+      RecruitIQ screens resumes using ML and exposes hidden bias in hiring pipelines.
+      Upload a dataset or individual resume, compare biased vs. unbiased outcomes,
+      and build a more equitable workforce.
+    </p>
+    <div class="hero-cta">
+      <a href="/upload" class="btn btn-primary">Start Screening →</a>
+      <a href="/bias"   class="btn btn-ghost">Explore Bias Lab</a>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="vis-card vis-card--1">
+      <span class="vis-label">Selection Rate</span>
+      <span class="vis-value">68%</span>
+      <span class="vis-delta positive">↑ Unbiased</span>
+    </div>
+    <div class="vis-card vis-card--2">
+      <span class="vis-label">Gender Parity</span>
+      <span class="vis-value">0.94</span>
+      <span class="vis-delta positive">↑ DI Ratio</span>
+    </div>
+    <div class="vis-card vis-card--3">
+      <span class="vis-label">Bias Delta</span>
+      <span class="vis-value">-21%</span>
+      <span class="vis-delta negative">↓ Biased mode</span>
+    </div>
+  </div>
+</section>
+
+<!-- ── Feature Cards ─────────────────────────────────────────────── -->
+<section class="features">
+  <h2 class="section-title">How it works</h2>
+  <div class="feature-grid">
+
+    <div class="feature-card" data-delay="0">
+      <div class="feature-icon">📂</div>
+      <h3>Upload Resumes</h3>
+      <p>Drop a CSV batch or individual PDF/TXT resumes. We auto-parse skills, education, and experience.</p>
+    </div>
+
+    <div class="feature-card" data-delay="100">
+      <div class="feature-icon">🤖</div>
+      <h3>ML Screening</h3>
+      <p>Logistic Regression + rule-based scoring rank candidates on merit: skills, experience, and education.</p>
+    </div>
+
+    <div class="feature-card" data-delay="200">
+      <div class="feature-icon">⚖️</div>
+      <h3>Bias Comparison</h3>
+      <p>Side-by-side view of biased vs. unbiased results with disparate impact ratios and fairness metrics.</p>
+    </div>
+
+    <div class="feature-card" data-delay="300">
+      <div class="feature-icon">📊</div>
+      <h3>Visual Dashboard</h3>
+      <p>Interactive charts break down selection rates by gender, education level, and experience.</p>
+    </div>
+
+    <div class="feature-card" data-delay="400">
+      <div class="feature-icon">⬇️</div>
+      <h3>Export Results</h3>
+      <p>Download biased and unbiased screening results as CSV files for further analysis.</p>
+    </div>
+
+    <div class="feature-card" data-delay="500">
+      <div class="feature-icon">🔬</div>
+      <h3>Bias Lab</h3>
+      <p>Explore how gender and education-tier proxies distort hiring decisions with live demo data.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ── Quick Demo ─────────────────────────────────────────────────── -->
+<section class="demo-cta">
+  <div class="demo-inner">
+    <h2>Try it instantly — no upload needed</h2>
+    <p>Generate 30 synthetic resumes and see the bias comparison live.</p>
+    <button class="btn btn-primary btn-lg" id="quickDemoBtn">
+      ⚡ Run Demo
+    </button>
+    <div id="demoResult" class="demo-result hidden"></div>
+  </div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script>
+document.getElementById("quickDemoBtn").addEventListener("click", async () => {
+  showLoader("Generating synthetic resumes…");
+  try {
+    const r    = await fetch("/api/generate_sample", { method: "POST" });
+    const data = await r.json();
+    hideLoader();
+    if (data.success) {
+      // Store results and redirect
+      sessionStorage.setItem("screeningData", JSON.stringify(data));
+      window.location.href = "/results";
+    }
+  } catch(e) {
+    hideLoader();
+    alert("Demo failed: " + e.message);
+  }
+});
+</script>
+{% endblock %}

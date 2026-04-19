@@ -1,0 +1,117 @@
+{% extends "base.html" %}
+{% block title %}Bias Lab — RecruitIQ{% endblock %}
+
+{% block content %}
+<div class="page-header">
+  <h1 class="page-title">⚖️ Bias Lab</h1>
+  <p class="page-sub">Understand and quantify how bias creeps into AI hiring systems</p>
+</div>
+
+<!-- ── No data state ──────────────────────────────────────────────── -->
+<div id="noDataState" class="empty-state">
+  <div class="empty-icon">🔬</div>
+  <h3>No comparison data yet</h3>
+  <p>Run the demo or upload a CSV to see the bias analysis.</p>
+  <button class="btn btn-primary" id="loadDemoBtn">⚡ Load Demo Data</button>
+</div>
+
+<!-- ── Bias Dashboard ─────────────────────────────────────────────── -->
+<div id="biasDashboard" class="hidden">
+
+  <!-- Explainer Banner -->
+  <div class="explainer-banner">
+    <div class="exp-icon">⚠️</div>
+    <div class="exp-text">
+      <strong>What are we measuring?</strong>
+      The <em>biased model</em> artificially penalises Female/Other candidates and over-rewards PhD holders,
+      simulating common proxy biases. The <em>unbiased model</em> scores purely on skills, experience, and education.
+      The gap between the two reveals how much bias distorts fair hiring.
+    </div>
+  </div>
+
+  <!-- Top Metrics -->
+  <div class="metrics-row" id="biasMetrics"></div>
+
+  <!-- Disparate Impact Gauge -->
+  <div class="gauge-row">
+    <div class="gauge-card">
+      <h3>Disparate Impact Ratio</h3>
+      <p class="gauge-desc">A ratio below 0.80 indicates significant bias (the "4/5ths rule").</p>
+      <div class="gauge-wrap">
+        <canvas id="gaugeChart" width="300" height="170"></canvas>
+        <div class="gauge-value" id="gaugeValue">—</div>
+      </div>
+      <div class="gauge-legend">
+        <span class="gl-dot" style="background:#ef4444"></span> &lt;0.80 Biased
+        <span class="gl-dot" style="background:#f59e0b;margin-left:12px"></span> 0.80–0.90 Borderline
+        <span class="gl-dot" style="background:#22c55e;margin-left:12px"></span> &gt;0.90 Fair
+      </div>
+    </div>
+
+    <!-- Selection Rate Delta -->
+    <div class="gauge-card">
+      <h3>Selection Rate Comparison</h3>
+      <p class="gauge-desc">How different are overall selection rates between modes?</p>
+      <canvas id="rateChart" height="170"></canvas>
+    </div>
+  </div>
+
+  <!-- Gender Breakdown -->
+  <div class="breakdown-grid">
+    <div class="breakdown-card">
+      <h3>Gender: Biased Mode</h3>
+      <canvas id="genderBiasedChart" height="200"></canvas>
+    </div>
+    <div class="breakdown-card">
+      <h3>Gender: Unbiased Mode</h3>
+      <canvas id="genderUnbiasedChart" height="200"></canvas>
+    </div>
+    <div class="breakdown-card">
+      <h3>Education: Biased Mode</h3>
+      <canvas id="eduBiasedChart" height="200"></canvas>
+    </div>
+    <div class="breakdown-card">
+      <h3>Education: Unbiased Mode</h3>
+      <canvas id="eduUnbiasedChart" height="200"></canvas>
+    </div>
+  </div>
+
+  <!-- Candidate Flip Table -->
+  <div class="table-card">
+    <h3 class="table-title">
+      🔄 Decision Flips
+      <span class="badge badge-warn" id="flipCount">—</span>
+    </h3>
+    <p class="table-hint">Candidates whose decision changed between biased and unbiased modes.</p>
+    <div class="table-wrap">
+      <table class="results-table" id="flipTable">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Education</th>
+            <th>Experience</th>
+            <th>Score (Biased)</th>
+            <th>Score (Unbiased)</th>
+            <th>Biased Decision</th>
+            <th>Unbiased Decision</th>
+          </tr>
+        </thead>
+        <tbody id="flipBody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Download -->
+  <div class="download-row">
+    <button class="btn btn-ghost" id="dlBiased">⬇ Biased Results CSV</button>
+    <button class="btn btn-ghost" id="dlUnbiased">⬇ Unbiased Results CSV</button>
+    <a href="/upload" class="btn btn-primary">Upload New Data →</a>
+  </div>
+
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='js/bias.js') }}"></script>
+{% endblock %}

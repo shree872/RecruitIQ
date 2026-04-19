@@ -1,0 +1,31 @@
+name,gender,education,experience_years,skills,num_skills
+Dr. Priya Sharma,Female,PhD,10,"machine learning,deep learning,python,tensorflow,pytorch,nlp,aws,docker,kubernetes,spark,r",11
+Dr. James Carter,Male,PhD,11,"deep learning,nlp,python,pytorch,tensorflow,aws,spark,kubernetes,git,r",10
+Dr. Sam Okafor,Other,PhD,9,"data analysis,machine learning,python,r,sql,tableau,spark,aws,docker",9
+Sarah Mitchell,Female,Master's,8,"python,machine learning,sql,tableau,power bi,r,flask,git,docker",9
+Kevin Zhang,Male,Master's,8,"python,machine learning,sql,docker,aws,git,kubernetes,spark",8
+Jordan Casey,Other,Master's,7,"python,machine learning,sql,docker,aws,git,react,node.js",8
+Aisha Okonkwo,Female,Master's,6,"java,python,react,node.js,aws,docker,git",7
+Tom Anderson,Male,Master's,6,"python,flask,sql,docker,git,react,javascript",7
+Riley Morgan,Other,Bachelor's,5,"javascript,react,node.js,sql,git,docker,aws",7
+Jennifer Lee,Female,Bachelor's,5,"python,sql,pandas,scikit-learn,flask,git,tableau",7
+Brian Foster,Male,Bachelor's,5,"python,flask,sql,git,docker,aws,javascript",7
+Neha Patel,Female,Master's,5,"deep learning,pytorch,python,r,aws",5
+Robert Chen,Male,Bachelor's,5,"java,python,sql,git,docker",5
+Fatima Al-Hassan,Female,Bachelor's,4,"python,sql,data analysis,tableau,excel,power bi",6
+Chris Williams,Male,Bachelor's,4,"python,data analysis,sql,excel,tableau,git",6
+Yuki Tanaka,Female,Bachelor's,3,"python,sql,pandas,excel,git",5
+Michael O'Brien,Male,Bachelor's,3,"javascript,react,html,css,git,sql",6
+Alex Rivera,Other,Bachelor's,3,"python,sql,data analysis,excel,tableau",5
+Emma Thompson,Female,Bachelor's,3,"javascript,typescript,react,git,html,css",6
+Nathan Brooks,Male,Bachelor's,3,"python,machine learning,sql,pandas,git",5
+Diana Prince,Female,Bachelor's,2,"python,sql,excel,git",4
+Marcus Webb,Male,Bachelor's,2,"javascript,html,css,git",4
+Olivia Grant,Female,Associate,2,"python,data analysis,excel,sql",4
+Eric Stone,Male,Associate,2,"excel,sql,word,tableau",4
+Anna Kowalski,Female,Associate,1,"excel,data entry,word",3
+Luke Patterson,Male,High School,1,"excel,word,powerpoint",3
+Sam Reyes,Other,High School,0,"html,css,excel",3
+Zack Turner,Male,High School,0,"excel,word",2
+Maria Lopez,Female,High School,0,"data entry,excel",2
+Jake Mills,Male,High School,0,"html,css",2

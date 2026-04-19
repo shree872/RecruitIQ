@@ -1,0 +1,31 @@
+name,gender,education,experience_years,skills,num_skills
+Priya Sharma,Female,PhD,10,"machine learning,deep learning,python,tensorflow,pytorch,nlp,aws,docker,kubernetes,spark",10
+Sarah Mitchell,Female,Master's,8,"python,data analysis,sql,tableau,power bi,r,machine learning,flask",8
+Aisha Okonkwo,Female,Master's,7,"java,python,react,node.js,aws,docker,git,javascript",8
+Maria Gonzalez,Female,PhD,9,"nlp,pytorch,tensorflow,deep learning,python,aws,spark,kubernetes",8
+Jennifer Lee,Female,Master's,6,"python,machine learning,sql,pandas,scikit-learn,flask,git",7
+Fatima Al-Hassan,Female,Bachelor's,5,"python,sql,data analysis,tableau,excel,power bi",6
+Neha Patel,Female,PhD,11,"deep learning,nlp,pytorch,tensorflow,python,r,spark,aws,docker",9
+Emma Thompson,Female,Master's,7,"javascript,typescript,react,node.js,aws,docker,git",7
+Yuki Tanaka,Female,Bachelor's,4,"python,sql,pandas,excel,tableau",5
+Amara Diallo,Female,Master's,6,"java,spring boot,aws,docker,kubernetes,git,sql",7
+James Harrison,Male,Bachelor's,3,"python,sql,excel",3
+Robert Chen,Male,Master's,5,"java,python,sql,git",4
+Michael O'Brien,Male,Bachelor's,2,"javascript,html,css,git",4
+David Patel,Male,PhD,7,"machine learning,python,tensorflow,aws",4
+Chris Williams,Male,Bachelor's,4,"python,data analysis,sql,excel,tableau",5
+Kevin Zhang,Male,Master's,6,"python,machine learning,sql,docker,git",5
+Tom Anderson,Male,Bachelor's,3,"react,javascript,node.js,git",4
+Alex Rivera,Male,Associate,2,"excel,sql,data analysis",3
+Brian Foster,Male,Bachelor's,5,"python,flask,sql,git,docker",5
+Nathan Brooks,Male,Master's,4,"python,machine learning,sql,pandas",4
+Jordan Casey,Other,Master's,6,"python,machine learning,sql,docker,aws,git,react",7
+Riley Morgan,Other,Bachelor's,4,"javascript,react,node.js,sql,git",5
+Sam Reyes,Other,PhD,8,"data analysis,python,r,sql,tableau,machine learning,spark",7
+Luke Patterson,Male,High School,1,"excel,word",2
+Anna Kowalski,Female,Associate,1,"excel,data entry",2
+Marcus Webb,Male,High School,0,"html,css",2
+Diana Prince,Female,Bachelor's,2,"python,sql",2
+Eric Stone,Male,Associate,2,"excel,sql,word",3
+Olivia Grant,Female,Bachelor's,3,"python,data analysis,excel",3
+Zack Turner,Male,High School,0,excel,1

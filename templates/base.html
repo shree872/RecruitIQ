@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{% block title %}RecruitIQ — AI Resume Screener{% endblock %}</title>
+
+  <!-- Google Fonts: Syne + DM Mono (non-blocking) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@400;500&family=Inter:wght@300;400;500&display=swap"
+        rel="stylesheet" />
+
+  <!-- App CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+
+  {% block head %}{% endblock %}
+</head>
+<body>
+
+  <!-- ── Navigation ─────────────────────────────────────────────── -->
+  <nav class="navbar">
+    <a href="/" class="brand">
+      <span class="brand-icon">⬡</span>
+      Recruit<span class="brand-accent">IQ</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="/"        class="nav-link {% if request.path=='/' %}active{% endif %}">Home</a></li>
+      <li><a href="/upload"  class="nav-link {% if request.path=='/upload' %}active{% endif %}">Upload</a></li>
+      <li><a href="/results" class="nav-link {% if request.path=='/results' %}active{% endif %}">Results</a></li>
+      <li><a href="/bias"    class="nav-link {% if request.path=='/bias' %}active{% endif %}">Bias Lab</a></li>
+    </ul>
+    <button class="theme-toggle" id="themeToggle" title="Toggle theme">◑</button>
+  </nav>
+
+  <!-- ── Main Content ───────────────────────────────────────────── -->
+  <main class="main-content">
+    {% block content %}{% endblock %}
+  </main>
+
+  <!-- ── Footer ────────────────────────────────────────────────── -->
+  <footer class="footer">
+    <p>RecruitIQ · AI-powered fair hiring · Built with Flask + Scikit-learn</p>
+  </footer>
+
+  <!-- ── Loading Overlay ───────────────────────────────────────── -->
+  <div class="loading-overlay" id="loadingOverlay">
+    <div class="loader-box">
+      <div class="spinner"></div>
+      <p class="loader-msg" id="loaderMsg">Processing…</p>
+    </div>
+  </div>
+
+  <!-- ── Chart.js: primary CDN + automatic fallback ────────────── -->
+  <!--
+    IMPORTANT: Chart.js MUST load before app.js and page scripts.
+    We load it at the bottom of <body> (after the DOM exists) and
+    use an onerror fallback to a second CDN in case the first fails.
+  -->
+  <script>
+    (function() {
+      var primary  = "https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js";
+      var fallback = "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.3/chart.umd.min.js";
+      var s = document.createElement("script");
+      s.src = primary;
+      s.onerror = function() {
+        console.warn("Primary Chart.js CDN failed, loading fallback…");
+        var s2 = document.createElement("script");
+        s2.src = fallback;
+        s2.onload = window.__chartJsReady;
+        document.head.appendChild(s2);
+      };
+      s.onload = function() { if (window.__chartJsReady) window.__chartJsReady(); };
+      document.head.appendChild(s);
+    })();
+  </script>
+
+  <!-- App JS (shared utilities — must come before page scripts) -->
+  <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+
+  {% block scripts %}{% endblock %}
+</body>
+</html>

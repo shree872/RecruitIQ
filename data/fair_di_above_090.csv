@@ -1,0 +1,37 @@
+name,gender,education,experience_years,skills,num_skills
+Priya Sharma,Female,PhD,10,"machine learning,deep learning,python,tensorflow,pytorch,nlp,aws,docker,kubernetes,spark",10
+Sarah Mitchell,Female,Master's,9,"python,deep learning,nlp,pytorch,aws,kubernetes,spark,docker,sql,git",10
+Aisha Rahman,Female,Master's,8,"machine learning,python,tensorflow,r,nlp,aws,flask,docker,sql,pandas",10
+Nina Patel,Female,Master's,8,"data analysis,python,sql,tableau,power bi,machine learning,aws,git,react,javascript",10
+Elena Vasquez,Female,Master's,8,"java,python,react,node.js,docker,kubernetes,aws,sql,typescript,git",10
+Yuki Tanaka,Female,Master's,9,"python,pandas,scikit-learn,machine learning,sql,tableau,flask,docker,aws",9
+Fatima Al-Hassan,Female,Bachelor's,9,"python,machine learning,sql,docker,aws,pandas,git,react,node.js",9
+Maria Gonzalez,Female,Master's,8,"python,sql,machine learning,aws,docker,pandas,git,flask",8
+Neha Kapoor,Female,Bachelor's,8,"java,python,sql,docker,aws,git,react,typescript",8
+Amy Brown,Female,High School,0,"excel,data entry",2
+Lisa Chen,Female,Associate,1,"excel,word,powerpoint",3
+Grace Kim,Female,Bachelor's,2,"python,sql",2
+James Carter,Male,PhD,10,"machine learning,deep learning,python,tensorflow,pytorch,nlp,aws,docker,kubernetes,spark",10
+Robert Singh,Male,Master's,9,"python,deep learning,nlp,pytorch,aws,kubernetes,spark,docker,sql,git",10
+Daniel Kim,Male,Master's,8,"data analysis,python,sql,tableau,power bi,machine learning,aws,git,react,javascript",10
+Michael Torres,Male,Master's,8,"java,python,react,node.js,docker,kubernetes,aws,sql,typescript,git",10
+Thomas Okafor,Male,Master's,9,"python,pandas,scikit-learn,machine learning,sql,tableau,flask,docker,aws",9
+Kevin Zhang,Male,Bachelor's,9,"python,machine learning,sql,docker,aws,pandas,git,react,node.js",9
+David Patel,Male,Master's,8,"machine learning,python,tensorflow,r,nlp,aws,flask,docker,sql,pandas",10
+Chris Williams,Male,Master's,8,"python,sql,machine learning,aws,docker,pandas,git,flask",8
+Nathan Brooks,Male,Bachelor's,8,"java,python,sql,docker,aws,git,react,typescript",8
+Mark Webb,Male,High School,0,"excel,word",2
+Luke Davis,Male,Associate,1,"html,css,word",3
+Jack Miller,Male,Bachelor's,2,"javascript,html",2
+Jordan Casey,Other,PhD,10,"machine learning,deep learning,python,tensorflow,pytorch,nlp,aws,docker,kubernetes,spark",10
+Riley Morgan,Other,Master's,9,"python,deep learning,nlp,pytorch,aws,kubernetes,spark,docker,sql,git",10
+Quinn Reyes,Other,Master's,8,"machine learning,python,tensorflow,r,nlp,aws,flask,docker,sql,pandas",10
+Alex Rivera,Other,Master's,8,"data analysis,python,sql,tableau,power bi,machine learning,aws,git,react,javascript",10
+Sam Okafor,Other,Master's,9,"python,pandas,scikit-learn,machine learning,sql,tableau,flask,docker,aws",9
+Blake Torres,Other,Bachelor's,9,"python,machine learning,sql,docker,aws,pandas,git,react,node.js",9
+Avery Johnson,Other,Master's,8,"python,sql,machine learning,aws,docker,pandas,git,flask",8
+Drew Mitchell,Other,Master's,8,"java,python,react,node.js,docker,kubernetes,aws,sql",8
+Sage Williams,Other,Bachelor's,8,"java,python,sql,docker,aws,git,react,typescript",8
+Casey Brown,Other,High School,0,"excel,word",2
+Robin Lee,Other,Associate,1,"data entry,excel,powerpoint",3
+Finley Adams,Other,Bachelor's,2,"python,html",2
