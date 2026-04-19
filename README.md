@@ -17,7 +17,7 @@
 
 <br/>
 
-## 🌐 [Live Demo](https://recruiteiq-ys2y.onrender.com) &nbsp;|&nbsp; 📄 [Research Paper](docs/research_paper.pdf) &nbsp;|&nbsp; 📊 [Sample Dataset](data/biased_dataset.csv)
+## 🌐 [Live Demo](https://recruiteiq-ys2y.onrender.com) &nbsp;|&nbsp; 📄 [Research Paper](docs/Bias_Software_Quality_RecruitIQ_Case_Study.pdf) &nbsp;|&nbsp; 📊 [Sample Dataset](data/biased_dataset.csv)
 
 > ⚠️ First load may take 30–60 seconds — Render free tier spins down after inactivity.
 
@@ -195,7 +195,7 @@ RecruitIQ/
 
 The system design and experimental findings are documented in:
 
-> Desai, A., Mehta, R., & Nouri, L. (2024). *Empirical Analysis of the Effect of Bias on Software Quality: A Case Study Using RecruitIQ*. IEEE Transactions on Software Engineering (Draft). [[PDF]](docs/research_paper.pdf)
+> Desai, A., Mehta, R., & Nouri, L. (2024). *Empirical Analysis of the Effect of Bias on Software Quality: A Case Study Using RecruitIQ*. IEEE Transactions on Software Engineering (Draft). [[PDF]](docs/Bias_Software_Quality_RecruitIQ_Case_Study.pdf)
 
 Key findings: biased pipeline produces DI = 0.541 (vs 0.980 unbiased), 13.3% decision-flip rate, 21.4% increase in score variance for Female candidates — statistically significant at p = 0.041.
 
