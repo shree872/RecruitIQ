@@ -1,5 +1,5 @@
 # RecruitIQ — AI Resume Screening Web App
-
+🌐 **[Live Demo](https://recruiteiq-ys2y.onrender.com)**
 A full-stack Flask web application that screens resumes using Machine Learning and demonstrates **bias vs. unbiased** hiring outcomes with interactive visualizations.
 
 ---
